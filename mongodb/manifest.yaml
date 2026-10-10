@@ -2,10 +2,11 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: mongodb
+  namespace: roboshop
 labels:
     project: roboshop  
-    tier : frontend
-    component: frontend
+    tier : db
+    component: mongodb
 spec:
   replicas: 1
   selector: 
@@ -30,6 +31,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: mongodb
+  namespace: roboshop
   labels:
     project: roboshop
     tier : db
