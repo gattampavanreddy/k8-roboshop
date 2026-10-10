@@ -3,8 +3,7 @@ kind: Deployment
 metadata:
   name: mongodb
 labels:
-    project: roboshop
-    
+    project: roboshop  
     tier : frontend
     component: frontend
 spec:
