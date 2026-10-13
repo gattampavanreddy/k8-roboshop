@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: mongodb
   namespace: roboshop
-labels:
+  labels:
     project: roboshop  
     tier : db
     component: mongodb
